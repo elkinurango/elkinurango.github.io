@@ -6,6 +6,11 @@
 
 /* Global Styles */
 
+ @font-face{
+    font-family: 'Aileron-UltraLight';
+    src: url('../fonts/Aileron-UltraLight.otf');
+ }
+
 html,
 body {
     width: 100%;
@@ -13,7 +18,8 @@ body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-family: 'Aileron-UltraLight';
 }
 
 .text-vertical-center {
@@ -25,13 +31,22 @@ body {
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
-    font-size: 4.5em;
-    color: #f47835;
+    font-size: 5.5em;
+    /*color: #f47835;*/
+    color: #d35400;
+}
+
+.name{
+    color: #d35400;
+}
+
+.bio{
+    color: #2c3e50;
 }
 
 .text-vertical-center h3 {
     font-weight: 500;
-    color: #fb9800;
+    color: #f39c12;
 }
 
 .img-about{
@@ -207,6 +222,7 @@ hr.small {
 
 .portfolio {
     padding: 50px 0;
+    background-color: #ecf0f1;
 }
 
 .portfolio-item {
@@ -231,11 +247,26 @@ hr.small {
     margin: 10px;
 }
 
-/* Map */
 
+/* ==========================================================================
+   23. Map Section
+========================================================================== */
+#map-section {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #ffffff;
+}
+#map {
+    width: 100%;
+    height: 380px;
+    position: relative;
+}
+/* Map */
+/*
 .map {
     height: 500px;
-}
+}*/
 
 @media(max-width:768px) {
     .map {
